@@ -1,0 +1,351 @@
+:root {
+    --primary-color: #e4e6eb;
+    --second-color: #242526;
+    --main-color: #18191a;
+    --notification: #f02849;
+    --biography-color: #242588;
+    --name: #2e89ff;
+    --profile-border: #263951;
+    --icons-color: #3a3b3c;
+    --font: #b0b3b8;
+    --header-first: #010101;
+    --header-second: #242526d2;
+}
+
+body, html, h1, p, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color:var(--second-color);
+    position: fixed;
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+}
+
+.logo {
+    display: flex;
+    padding: 6px 15px;
+    margin-top: 4px;
+    width: 330px;
+}
+
+.logo a img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo input {
+    border-radius: 50px;
+    height: 40px;
+    width: 100%;
+    background-color: var(--icons-color);
+    border: none;
+    outline: none;
+}
+
+.logo input::placeholder {
+    padding: 0 20px;
+    font-weight: 400;
+    color: var(--font);
+    font-size: 15px;
+}
+
+.pages {
+    width: 650px;
+    height: 100%;
+}
+
+.pages  ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+.pages ul li:not(:first-child) {
+    margin: 0 47px;
+}
+
+.pages ul li:first-child {
+    margin-right: 47px;
+}
+
+.icons {
+    fill: transparent;
+    stroke: #85878b;
+}
+
+.icons2 {
+    fill: #85878b;
+}
+
+.pages ul li a {
+    color: var(--font);
+    font-size: 20px;
+}
+
+.play{
+    background-color: var(--notification);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 18px;
+    padding: 2px 4.5px;
+    font-size: 13px;
+    position: absolute;
+    top: 8px;
+    color: white;
+}
+
+.arrow {
+    font-size: 23px;
+    margin-top: -5px;
+}
+
+.arrow::after {
+    content: '.';
+    color: transparent;
+    padding: 5px;
+    background-color: var(--notification);
+    width: 1px;
+    height: 1px;
+    border: 2px solid var(--header-second);
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+}
+
+.more {
+    margin-right: 25px;
+}
+
+.more, .page-profile a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.more img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.more ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.more ul li {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--icons-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.more a {
+    color: var(--font);
+    text-decoration: none;
+}
+
+.page-profile {
+    width: 105.55px;
+    height: 35.99px;
+    background-color: var(--profile-border);
+    padding: 1px 1px 1px 4px;
+    border-radius: 50px;
+    margin-right: 7px;
+}
+
+.page-profile a p {
+    margin-left: 5px;
+}
+
+.page-profile a {
+    color: var(--name);
+    font-weight: 400;
+}
+
+main {
+    background-image: linear-gradient(var(--header-first), var(--header-second));
+    padding-top: 55px;
+}
+
+.section {
+    width: 940px;
+    height: 555px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile > img {
+    height: 358.66px;
+    border-radius: 10px;
+}
+
+.profile img + img {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    margin-top: -160px;
+    background-color: #171819;
+    padding: 5px;
+}
+
+.edition {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff1A;
+    width: 174.73px;
+    height: 35.99px;
+    border-radius: 7px;
+    padding: 3px 12px;
+    margin: -67px -670px 0 0;
+}
+
+.edition-a {
+    text-decoration: none;
+    color: var(--font);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.edition i {
+    color: var(--font);
+    padding-right: 10px;
+}
+
+.photo {
+    background-color: #ffffff21;
+    padding: 8px 10px;
+    border-radius: 50%;
+    color: var(--font);
+    margin: -46px 0 0 126px;
+}
+
+.name {
+    margin: 55px 0 15px;
+    width: 95%;
+}
+
+.name hr {
+    opacity: .1;
+    margin-top: 20px;
+}
+
+.name h1 {
+    color: var(--font);
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.name p {
+    color: var(--name);
+    font-weight: bold;
+    text-align: center;
+}
+
+.more_options {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 90%;
+    color: var(--font);
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.more_options ul {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+.more_options ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 16px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.more_options ul li:not(:first-child) a {
+    color: var(--font);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.links ul li:first-child {
+    border-bottom: 3px solid var(--name);
+    margin-bottom: 3px;
+}
+
+.links ul li:first-child a{
+    color: var(--name);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.links2 ul li:not(:first-child){
+    background-color: var(--icons-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.links2 ul li:first-child {
+    background-color: var(--icons-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 125.55;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.links2 ul li:not(:last-child) {
+    margin-right: 8px;
+}
+
+.section2 {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 500px;
+}
+
